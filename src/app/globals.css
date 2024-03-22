@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+    .animation-delay-6000 {
+      animation-delay: 6s;
+    }
+    .animation-delay-8000 {
+      animation-delay: 8s;
+    }
+  }
+
+/* .light{
+    background: #e7fddd;
+    color: rgb(0, 0, 0);
+}
+.dark{
+    background-image: linear-gradient(-45deg,rgb(4, 4, 20),rgb(1, 20, 21));
+    color: #e7fddd;
+}
+
+.darknav{
+    background-image: linear-gradient(45deg,rgba(4, 4, 20, 0.863),rgba(1, 20, 21, 0.831));
+    color: #e7fddd;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.ql-container{
+    font-size: 18px !important;
+  }
+.quill > .ql-container > .ql-editor.ql-blank::before{
+    color: #b3b3b1;
+  }
