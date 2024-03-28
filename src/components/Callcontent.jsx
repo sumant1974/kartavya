@@ -3,7 +3,7 @@ import Content from './content/page';
 
 const getData = async () => {
     try {
-      const data = await fetch(`https://kartavya-blog-app.vercel.app/api/revents`, {
+      const data = await fetch(`https://kartavya.trident.ac.in/api/revents`, {
 
         cache: "no-store"
       });
