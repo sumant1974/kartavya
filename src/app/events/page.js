@@ -5,8 +5,8 @@ import Link from "next/link";
 const getData = async () => {
   try {
 
-
-    const data = await fetch(`https://kartavya-blog-app.vercel.app/api/revents`, {
+    const domain=process.env.DOMAIN;
+    const data = await fetch(domain+`/api/revents`, {
       cache: "no-store",
     });
     if (!data.ok) {

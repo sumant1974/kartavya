@@ -3,7 +3,8 @@ import React from 'react'
 
 const getData = async () => {
   try {
-    const data = await fetch(`https://kartavya-blog-app.vercel.app/api/members`, {
+    const domain=process.env.DOMAIN;
+    const data = await fetch(domain+`/api/members`, {
       cache: "no-store"
     });
 
