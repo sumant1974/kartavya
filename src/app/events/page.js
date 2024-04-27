@@ -4,11 +4,13 @@ import Link from "next/link";
 
 const getData = async () => {
   try {
-
-    const domain=process.env.DOMAIN;
-    const data = await fetch(domain+`/api/revents`, {
-      cache: "no-store",
-    });
+    const domain = process.env.DOMAIN;
+    const data = await fetch(
+      `${domain}/api/revents`,
+      {
+        cache: "no-store",
+      }
+    );
     if (!data.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -34,29 +36,30 @@ export default async function page() {
             Recent Activities:
           </h1>
           {data?.map((item) => (
-            <div
-              className="relative mt-5 lg:max-w-full border-[1px] border-gray-300 dark:border-emerald-950 rounded-lg shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] dark:shadow-slate-800"
-              key={item._id}
-            >
-              <div className="p-2">
-                <Link href={`/events/${item._id}`}>
-                  <h1 className="text-2xl lg:text-4xl dark:text-zinc-50 capitalize hover:text-green-500">
-                    {item.title}
-                  </h1>
-                </Link>
-                <div className="p-2 flex justify-center">
-                  <Image
-                    src={item.img}
-                    width={900}
-                    height={1000}
-                    alt="image"
-                    style={{ objectFit: "contain" }}
-                  />
+            <div key={item._id}>
+              <div className="relative mt-5 lg:max-w-full border-[1px] border-gray-300 dark:border-emerald-950 rounded-lg shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] dark:shadow-slate-800">
+                <div className="p-2">
+                  <Link href={`/events/${item._id}`}>
+                    <h1 className="text-2xl lg:text-4xl dark:text-zinc-50 capitalize hover:text-green-500">
+                      {item.title}
+                    </h1>
+
+                    <div className="p-2 mt-2 flex justify-center bg-cover overflow-hidden">
+                      <Image
+                        src={item.img}
+                        className="hover:scale-110 duration-300 transition ease-in-out"
+                        width={900}
+                        height={1000}
+                        alt="image"
+                        style={{ objectFit: "contain" }}
+                      />
+                    </div>
+                  </Link>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: item.desc }}
+                    className="absolute p-1 rounded-md dark:bg-[#21312fa4] bg-[#bef1eba4] bottom-5 xl:bottom-10 xl:mx-40 mx-7 prose dark:prose-invert line-clamp-2 prose-headings:text-base"
+                  ></div>
                 </div>
-                <div
-                  dangerouslySetInnerHTML={{ __html: item.desc }}
-                  className="absolute p-1 rounded-md bg-[#21312fa4] bottom-5 xl:bottom-10 xl:mx-40 mx-7 prose dark:prose-invert line-clamp-2 prose-headings:text-base"
-                ></div>
               </div>
             </div>
           ))}
@@ -71,3 +74,7 @@ export const metadata = {
   description: "we help to grow",
 };
 export const runtime = "edge";
+
+{
+  /* <Link href={`/events/${item._id}`}></Link> */
+}

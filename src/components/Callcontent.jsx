@@ -3,8 +3,8 @@ import Content from './content/page';
 
 const getData = async () => {
     try {
-      const domain=process.env.DOMAIN;
-      const data = await fetch(domain+'/api/revents', {
+      const domain = process.env.DOMAIN;
+      const data = await fetch(`${domain}/api/revents`, {
 
         cache: "no-store"
       });

@@ -2,8 +2,8 @@ import React from "react";
 
 const getData = async () => {
   try {
-    const domain=process.env.DOMAIN;
-      const data = await fetch(domain+`/api/upcomings`, {
+    const domain = process.env.DOMAIN;
+    const data = await fetch(`${domain}/api/upcomings`, {
       cache: "no-store",
     });
 

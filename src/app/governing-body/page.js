@@ -18,135 +18,108 @@ export default function page() {
         <div className="fixed bottom-0 -left-[20%]  filter blur-xl opacity-50 w-72 h-72 rounded-full bg-blue-400 animate-blob animation-delay-8000"></div>
       </div>
 
-      <div className="flex flex-col gap-10 my-5 backdrop-blur-sm">
+      <div className="flex flex-col gap-10 my-5 backdrop-blur-sm dark:bg-[#15182079] rounded-lg p-2">
+
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row">
             <div className="relative  border-green-500 rounded-full w-52 h-52 overflow-hidden flex justify-center">
               <Image
-                src="/rg1.jpg"
+                src="/drsrp.jpg"
                 className="object-cover"
                 alt="Governing Body"
                 width={1000}
                 height={500}
               />
             </div>
-            <div className="flex justify-end items-end font-bold">
+            
+          </div>
+          <div className="flex justify-end items-end font-bold">
               <h1 className="text-2xl">
-                BB Panigrahy <br /> <span className="text-lg">chairman</span>
+                Smt. S. Panigrahi <br /> <span className="text-lg">Chairperson</span>
               </h1>
             </div>
-          </div>
-          <div className="backdrop-blur-2xl rounded-lg p-3 md:w-[60vw]">
+          <div className="border-white rounded-lg p-3 md:w-[60vw]">
             <h1 className="text-xl font-semibold text-align-justify">
-              "My dear citizens of India, today as we look towards the horizon
-              of progress, we must remember the values that have guided our
-              nation through the ages. From the ancient wisdom of our scriptures
-              to the vibrancy of our cultural heritage, we find strength and
-              inspiration. It is our duty, as stewards of this great land, to
-              uphold these values and forge ahead on the path of development and
-              prosperity. Together, let us strive to build a New India, where
-              every citizen has the opportunity to fulfill their dreams and
-              aspirations. With determination and dedication, we can overcome
-              any obstacle and achieve greatness. Jai Hind!"
+              
             </h1>
           </div>
         </div>
+
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row">
             <div className="relative  border-green-500 rounded-full w-52 h-52 overflow-hidden flex justify-center">
               <Image
-                src="/rg1.jpg"
+                src="/drbb.jpg"
                 className="object-cover"
                 alt="Governing Body"
                 width={1000}
                 height={500}
               />
             </div>
-            <div className="flex justify-end items-end font-bold">
+            
+          </div>
+          <div className="flex justify-end items-end font-bold">
               <h1 className="text-2xl">
-                BB Panigrahy <br /> <span className="text-lg">chairman</span>
+                Dr. B.B. Panigrahi <br /> <span className="text-lg">Chief Mentor</span>
               </h1>
             </div>
-          </div>
           <div className=" border-white rounded-lg p-3 md:w-[60vw]">
             <h1 className="text-xl font-semibold text-align-justify">
-              "My dear citizens of India, today as we look towards the horizon
-              of progress, we must remember the values that have guided our
-              nation through the ages. From the ancient wisdom of our scriptures
-              to the vibrancy of our cultural heritage, we find strength and
-              inspiration. It is our duty, as stewards of this great land, to
-              uphold these values and forge ahead on the path of development and
-              prosperity. Together, let us strive to build a New India, where
-              every citizen has the opportunity to fulfill their dreams and
-              aspirations. With determination and dedication, we can overcome
-              any obstacle and achieve greatness. Jai Hind!"
+              
             </h1>
           </div>
         </div>
+
         <div className="flex flex-col justify-center items-center">
           <div className="flex flex-row">
             <div className="relative  border-green-500 rounded-full w-52 h-52 overflow-hidden flex justify-center">
               <Image
-                src="/rg1.jpg"
+                src="/drdnp.jpg"
                 className="object-cover"
                 alt="Governing Body"
                 width={1000}
                 height={500}
               />
             </div>
-            <div className="flex justify-end items-end font-bold">
+            
+          </div>
+          <div className="flex justify-end items-end font-bold">
               <h1 className="text-2xl">
-                BB Panigrahy <br /> <span className="text-lg">chairman</span>
+                Prof. (Dr) D. N. Pattanayak <br /> <span className="text-lg">Principal</span>
               </h1>
             </div>
-          </div>
           <div className=" border-white rounded-lg p-3 md:w-[60vw]">
             <h1 className="text-xl font-semibold text-align-justify">
-              "My dear citizens of India, today as we look towards the horizon
-              of progress, we must remember the values that have guided our
-              nation through the ages. From the ancient wisdom of our scriptures
-              to the vibrancy of our cultural heritage, we find strength and
-              inspiration. It is our duty, as stewards of this great land, to
-              uphold these values and forge ahead on the path of development and
-              prosperity. Together, let us strive to build a New India, where
-              every citizen has the opportunity to fulfill their dreams and
-              aspirations. With determination and dedication, we can overcome
-              any obstacle and achieve greatness. Jai Hind!"
+              
             </h1>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+
+        <div className="flex flex-col justify-center items-center ">
           <div className="flex flex-row">
             <div className="relative  border-green-500 rounded-full w-52 h-52 overflow-hidden flex justify-center">
               <Image
-                src="/rg1.jpg"
+                src="/mrdp.jpg"
                 className="object-cover"
                 alt="Governing Body"
                 width={1000}
                 height={500}
               />
             </div>
-            <div className="flex justify-end items-end font-bold">
+            
+          </div>
+          <div className="flex justify-end items-end font-bold">
               <h1 className="text-2xl">
-                BB Panigrahy <br /> <span className="text-lg">chairman</span>
+                Mr. Deepak Kumar Mohapatra <br /> <span className="text-lg">Asst. Professor, Faculty Coordinator</span>
               </h1>
             </div>
-          </div>
           <div className=" border-white rounded-lg p-3 md:w-[60vw]">
             <h1 className="text-xl font-semibold text-align-justify">
-              "My dear citizens of India, today as we look towards the horizon
-              of progress, we must remember the values that have guided our
-              nation through the ages. From the ancient wisdom of our scriptures
-              to the vibrancy of our cultural heritage, we find strength and
-              inspiration. It is our duty, as stewards of this great land, to
-              uphold these values and forge ahead on the path of development and
-              prosperity. Together, let us strive to build a New India, where
-              every citizen has the opportunity to fulfill their dreams and
-              aspirations. With determination and dedication, we can overcome
-              any obstacle and achieve greatness. Jai Hind!"
+              
             </h1>
           </div>
         </div>
+
       </div>
     </main>
   );

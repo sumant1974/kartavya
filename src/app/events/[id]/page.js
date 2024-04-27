@@ -6,8 +6,8 @@ import { notFound } from 'next/navigation';
 const getData = async (params) => {
     try {
 
-
-        const data = await fetch(`https://kartavya-blog-app.vercel.app/api/revents/${params}`, {
+        const domain = process.env.DOMAIN;
+        const data = await fetch(`${domain}/api/revents/${params}`, {
             cache: "no-store"
         });
 
