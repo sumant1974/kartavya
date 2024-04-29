@@ -11,10 +11,10 @@ export default function Imager() {
             width={1200}
             height={120}
             alt="/"
-            className="rounded-md opacity-70"
+            className="rounded-md opacity-100"
           />
 
-          <div
+          {/* <div
             className="absolute 
                         bottom-0 
                         left-0 
@@ -34,7 +34,7 @@ export default function Imager() {
                 <h1 className="text-3xl md:text-5xl lg:text-7xl text-white drop-shadow-[0_3.2px_1.2px_rgb(0,0,0)]">Empower</h1>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -26,6 +26,7 @@ module.exports = {
         spin: 'spin 0.2s linear',
         spinreverse: 'spinreverse 0.2s linear',
         blob: "blob 7s infinite",
+        txt:'txt 2s ease infinite',
       },
       
       keyframes: {
@@ -61,7 +62,17 @@ module.exports = {
           "100%": {
             transform: "tranlate(0px, 0px) scale(1)",
           },
-        }
+        },
+        txt: {
+          '0%, 100%': {
+             'background-size':'200% 200%',
+              'background-position': 'left center'
+          },
+          '50%': {
+             'background-size':'200% 200%',
+              'background-position': 'right center'
+          }
+      },
       },
 
       letterSpacing: {
